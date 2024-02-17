@@ -35,7 +35,7 @@ export const ContactForm = () => {
       NotificationManager.info(`${name} is already in contacts.`);
       return;
     }
-    dispatch(addContact(name, number));
+    dispatch(addContact({ name, number }));
     setName('');
     setNumber('');
   };
